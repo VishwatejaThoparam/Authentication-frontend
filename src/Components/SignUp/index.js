@@ -17,7 +17,7 @@ const SignUp = () => {
   const handleSignUpSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axiosInstance.post('/auth/signup', signUpData);
+      const response = await axiosInstance.post('/api/auth/signup', signUpData);
       console.log('User login :', response.data);
       // You can redirect the user or perform other actions upon successful signup
      setisSignUp(true)

@@ -18,7 +18,7 @@ const Login = () => {
   async function handleSignUpSubmit(event) {
     event.preventDefault();
     try {
-      const response = await axiosInstance.post('/auth/signin', loginData);
+      const response = await axiosInstance.post('/api/auth/signin', loginData);
       console.log('User signed up successfully:', response.data);
       setisLogin(true);
 
